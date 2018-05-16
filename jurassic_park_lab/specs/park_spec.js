@@ -4,40 +4,54 @@ const Dinosaur = require('../models/dinosaur.js');
 
 describe('Park', function() {
 
+  let park;
+
   beforeEach(function () {
-
-  })
-
-  xit('should have a name', function () {
+    park = new Park('Jurassic', 50, ['T-Rex, Rex']);
 
   });
 
-  xit('should have a ticket price', function () {
-
+  it('should have a name', function () {
+    const actual = park.name;
+    assert.strictEqual(actual, 'Jurassic' );
   });
 
-  xit('should have a collection of dinosaurs', function () {
-
+  it('should have a ticket price', function () {
+    const actual = park.ticketPrice;
+    assert.strictEqual(actual, 50);
   });
 
-  xit('should be able to add a dinosaur to its collection', function () {
+  describe('dinosaurs', function () {
 
-  });
+    it('should have a collection of dinosaurs', function () {
+      const actual = park.dinosaurs;
+      assert.deepStrictEqual(actual, []);
 
-  xit('should be able to remove a dinosaur from its collection', function () {
+    });
 
-  });
+    it('should be able to add a dinosaur to its collection', function () {
+      park.addDinosaur('T-Rex');
+      const actual = park.dinosaurs.length;
+      assert.deepStrictEqual(actual, 1);
+    });
 
-  xit('should be able to find all dinosaurs of a particular species', function () {
+    it('should be able to remove a dinosaur from its collection', function () {
+      park.removeDinosaur();
+      const actual = park.dinosaurs.length;
+      assert.deepStrictEqual(actual,0);
+    });
 
-  });
+    xit('should be able to find all dinosaurs of a particular species', function () {
 
-  xit('should be able to remove all dinosaurs of a particular species', function () {
+    });
 
-  });
+    xit('should be able to remove all dinosaurs of a particular species', function () {
 
-  xit('should be able to find the dinosaur that attracts the most visitors', function () {
+    });
 
+    xit('should be able to find the dinosaur that attracts the most visitors', function () {
+
+    });
   });
 
 });
