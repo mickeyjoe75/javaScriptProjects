@@ -4,4 +4,10 @@ const Dinosaur = function (species, diet, guestsAttractedPerDay) {
   this.guestsAttractedPerDay = guestsAttractedPerDay;
 };
 
+Dinosaur.prototype.findBySpecies = function () {
+  return this.species;
+};
+
+
+
 module.exports = Dinosaur;
