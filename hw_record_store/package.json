@@ -1,0 +1,17 @@
+{
+  "name": "hw_record_store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha models/specs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
