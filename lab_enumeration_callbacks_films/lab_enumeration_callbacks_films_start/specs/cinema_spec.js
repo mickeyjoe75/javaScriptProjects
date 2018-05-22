@@ -24,13 +24,12 @@ describe('Cinema', function () {
     const titles = ['Moonlight', 'Blade Runner 2049', 'Dunkirk', 'Black Panther', 'T2 Trainspotting'];
     const actual = cinema.getTitlesList();
     assert.deepStrictEqual(actual, titles);
-
   });
 
+  it('should be able to find a film by title',function () {
+    const actual = cinema.films.title;
+    assert.deepStrictEqual(actual,)
 
-
-
-  xit('should be able to find a film by title',function () {
 
   });
 

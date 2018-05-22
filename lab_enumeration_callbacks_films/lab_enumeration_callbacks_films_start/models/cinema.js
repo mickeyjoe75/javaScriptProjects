@@ -9,6 +9,10 @@ Cinema.prototype.getTitlesList = function () {
   })
 };
 
+Cinema.prototype.methodName = function () {
+
+};
+
 
 // Cinema.prototype.filterFilmsByGenre = function (genre) {
 //   const genreArray = genre.filter(genre => gnere === genre)

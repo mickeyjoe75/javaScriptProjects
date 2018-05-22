@@ -13,10 +13,15 @@ describe('RecordStore',function () {
   it('should have a name',function () {
     assert.strictEqual(recordStore.name, 'Virgin')
   });
+  // should start with no funds
+  it('should start with no funds',function () {
+    assert.strictEqual(recordStore.funds, 0)
+  });
+  // should start with an empty collection of records
+  
   /*
-  should start with no funds
   should be able to add funds
-  should start with an empty collection of records
+
   should be able to add a record to its stock
   should be able to remove a record from its stock
   should be able to sell a record if it has the record
