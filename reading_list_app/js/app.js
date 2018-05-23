@@ -30,5 +30,5 @@ form.addEventListener('submit', handleFormInputChanged);
 const handleFormInputChanged = function (event) {
   event.preventDefault();
   const formInputResult = document.querySelector('#form-result');
-  formInputResult.textContent = 'Title: ' + event.target.title.value + ' ' + 'Author: ' + event.target.author.value + ' ' + 'Genre: ' + event.target.select.value + ' ' + 'Category: ' + event.target.category.value;
+  formInputResult.textContent = 'Title: ' + event.target.title.value + '\n' + 'Author: ' + event.target.author.value + '\n' + 'Genre: ' + event.target.select.value + ' ' + 'Category: ' + event.target.category.value;
 }
