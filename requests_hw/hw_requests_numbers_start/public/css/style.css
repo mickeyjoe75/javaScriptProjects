@@ -1,1 +1,15 @@
 
+body {
+  font-family: monospace;
+  /* background-color: #a8ff78; */
+  background: linear-gradient(to right, #a8ff78 , #78ffd6);
+
+}
+
+/* #grad {
+  background: linear-gradient(to right, #a8ff78 , #78ffd6);
+} */
+
+#fact {
+  color: #ff00d0;
+}

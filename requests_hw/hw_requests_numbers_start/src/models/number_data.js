@@ -13,9 +13,12 @@ NumberData.prototype.bindEvents = function () {
 NumberData.prototype.getData = function (number) {
   const url = `http://numbersapi.com/${ number }?json`;
   const request = new Request(url);
-  request.get((data) => {
-    PubSub.publish('NumberData:fact-ready', data);
-  });
+  // request.get((data) => {
+  //   PubSub.publish('NumberData:fact-ready', data);
+  // });
+  request.get()
+  .then(data => PubSub.publish('NumberData:fact-ready', data))
+  .catch(err => console.log(err))
 };
 
 NumberData.prototype.handleNumberSubmit = function (number) {
