@@ -2,16 +2,25 @@ const PubSub = require('../helpers/pub_sub.js');
 const Request = require('../helpers/request.js');
 
 const NumberData = function () {
-  this.randomNumber = null;
 }
 
-NumberData.prototype.getData = function () {
-  const request = new Request('http://numbersapi.com/1?json');
-  request.get((data) => {
-    this.randomNumber = data[0];
-    PubSub.publish('NumberFormView:submit', this.randomNumber);
+NumberData.prototype.bindEvents = function () {
+  PubSub.subsribe('NumberFormView:submit',(event) => {
+    this.handleNumberSubmit(event.detail);
   });
-
 };
+
+NumberData.prototype.getData = function (number) {
+  const url = `http://numbersapi.com/${ number }?json`;
+  const request = new Request(url);
+  request.get((data) => {
+    PubSub.publish('NumberData:fact-ready', data);
+  });
+};
+
+NumberData.prototype.handleNumberSubmit = function (number) {
+  this.getData(number);
+};
+
 
 module.exports = NumberData;
