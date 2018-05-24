@@ -7,12 +7,12 @@ const NumberFormView = function (form) {
 NumberFormView.prototype.bindEvents = function () {
   this.form.addEventListener('submit', (evt) => {
     this.handleSubmit(evt);
-  })
+  });
 };
 
 NumberFormView.prototype.handleSubmit = function (evt) {
   evt.preventDefault();
-  PubSub.publish('NumberFormView:submit', evt.target.number.value);
+  PubSub.publish('NumberFormView:submit', evt.target.number.val);
 };
 
 module.exports = NumberFormView;
