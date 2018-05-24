@@ -5,7 +5,7 @@ const NumberData = function () {
 }
 
 NumberData.prototype.bindEvents = function () {
-  PubSub.subsribe('NumberFormView:submit',(event) => {
+  PubSub.subscribe('NumberFormView:submit',(event) => {
     this.handleNumberSubmit(event.detail);
   });
 };

@@ -9,11 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   numberFormView.bindEvents();
 
   const resultContainer = document.querySelector('#number-fact');
-  const Result = 
+  const resultView = new Result(resultContainer);
+  resultView.bindEvents();
 
-
-  const result = new Result();
-  result.bindEvents();
-
-
+  const numberdata = new NumberData();
+  numberdata.bindEvents();
 });
