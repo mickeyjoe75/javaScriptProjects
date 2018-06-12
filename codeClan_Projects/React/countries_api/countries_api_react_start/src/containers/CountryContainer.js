@@ -36,7 +36,7 @@ class CountryContainer extends React.Component {
         />
         <CountryDetail country={this.state.currentCountry} />
       </div>
-    );
+    )
   }
 }
 

@@ -8,7 +8,6 @@ const CountrySelector = (props) => {
 
   function handleChange(event) {
     props.onCountrySelected(event.target.value)
-
   }
 
   return (
