@@ -9,22 +9,32 @@ class CountryContainer extends React.Component {
       countries: [],
       currentCountry: null
     };
+    this.handleCountrySelected = this.handleCountrySelected.bind(this);
   }
-//to fetch data from API links
+  //to fetch data from API links
   componentDidMount(){
     const url = 'https://restcountries.eu/rest/v2/all';
     fetch(url)
-      .then(res => res.json())
-      .then(countriesData => this.setState({countries: countriesData}))
-      .catch(error => console.log("Error:", error))
+    .then(res => res.json())
+    .then(countriesData => this.setState({countries: countriesData}))
+    .catch(error => console.log("Error:", error))
+  }
+
+  handleCountrySelected(index){
+    const selectedCountry = this.state.countries[index]
+    this.setState({currentCountry: selectedCountry})
+
   }
 
   render(){
     return (
       <div>
         <h2>Country Container</h2>
-        <CountrySelector countries={this.state.countries}/>
-        <CountryDetail />
+        <CountrySelector
+          countries={this.state.countries}
+          onCountrySelected={this.handleCountrySelected}
+        />
+        <CountryDetail country={this.state.currentCountry} />
       </div>
     );
   }

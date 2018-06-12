@@ -6,10 +6,13 @@ const CountrySelector = (props) => {
     return <option value={index} key={index}>{country.name}</option>
   })
 
+  function handleChange(event) {
+    props.onCountrySelected(event.target.value)
 
+  }
 
   return (
-    <select id="country-selector" defaultValue="default">
+    <select id="country-selector" defaultValue="default" onChange={handleChange}>
       <option disabled value="default">Choose a country...</option>
       {options}
     </select>
