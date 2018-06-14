@@ -15,7 +15,7 @@ class FootballContainer extends React.Component {
 
   //Fetching data from the API link:
   componentDidMount(){
-    const url = 'http://api.football-data.org/v1/fixtures';
+    const url = 'http://api.football-data.org/v1/competitions/467/fixtures';
     fetch(url, {
       headers: {
         "X-Auth-Token": "1d954537605c42709c3a89b44818d906"
