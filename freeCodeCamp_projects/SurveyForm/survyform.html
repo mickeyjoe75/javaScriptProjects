@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>survey form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    
+  
+  <h1 id="title">Survery Form</h1>
+<div id="form-outer">
+  <p id="description">Contact Us Form</p>
+  
+  <div id="form">
+    <form id="survey-form">
+      <div class="labelrow"><div class="labels"> <label id="name-label" for="name">* Name: </label></div></div>
+      <div class="inputtab">
+      <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required></div>
+      <div class="labels"> <label id="email-label" for="email">* Email: </label></div>
+           <div class="inputtab"><input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required></div>
+           <div class="labels"> <label id="number-label" for="number">* Phone Number: </label></div>
+           <div class="inputtab"><input type="number" name="number" id="number" class="input-field" placeholder="Enter your Phone number" required></div>
+      <div class="labels"><h5>What is your query about?</h5></div>
+      <div class="inputtab">
+      <div class="dropdown-div">
+      <select id="dropdown" class="dropdown">
+        <option disabled value>Select an option</option>
+        <option value="WebDevelopement">Web Development</option>
+        <option value="Mobile Development">Mobile Apps</option>
+        <option value="DataAnalytics">Data Analytics</option>
+        </select>
+        </div>
+       </div> 
+        <div>
+                <div class="labels"><h5>What is your timeframe for starting the project?</h5></div>
+          <div class="inputtab">
+          <ul style="list-style:none;">
+            <li class="radio">
+              <label>Immediate<input name="radio-buttons" value="1" type="radio" class="timeframe"</label>
+                </li></ul>
+       
+          <div>
+          <ul style="list-style:none;">
+            <li class="radio">
+              <label>2 Weeks<input name="radio-buttons" value="2" type="radio" class="timeframe"</label>
+                </li></ul>
+        </div>
+                      <div>
+          <ul style="list-style:none;">
+            <li class="radio">
+              <label>3-5 Weeks<input name="radio-buttons" value="3" type="radio" class="timeframe"</label>
+                </li>
+        </div></div> </div>
+     <div class="labels"><h5>Your Company Size?</h5></div>
+                        <div class="inputtab"><div class="checkboxes">
+                          <ul id="sizes" style="list-style: none;">
+                            <li class="checkbox"><label><input name="size" class="size" value="1" type="checkbox">1 - 25 Employees</label></li>
+                            <li class="checkbox"><label><input name="size" class="size" value="2" type="checkbox">25 - 50 Employees</label></li>
+                            <li class="checkbox"><label><input name="size" class="size" value="3" type="checkbox">50 - 100 Employees</label></li>
+                        </div></div>
+                               <div class="labels"><h5>Any comments or suggestions?</h5></div>
+                      <div class="textarea">
+                        <textarea id="textbox" class="input-field" style="height:50px;resize:vertical;" name="textbox" placeholder="Enter your text here..."></textarea>
+                          </div>
+                          <button id="submit" type="submit">Submit</button>
+   
+         
+    </form>
+  </div>
+ </div>
+</body>
+</html>
