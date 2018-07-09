@@ -1,0 +1,179 @@
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: white;
+    }
+}
+
+body {
+  background-color: lightblue;
+  font-family: 'Lato', sans-serif;
+   align-content: center;
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/** global classes styling **/
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 100px auto;
+  display:flex;
+  flex-direction: column;
+  
+}
+
+.btn {
+  text-align: center;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+    cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+#header {
+  position: fixed;
+  background-color: lightgray;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+ 
+ #header-img {
+    width: 80PX;
+    height: 80PX;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    /* @media (max-width: 650px) {
+      margin: 0 auto;
+    } */
+  }
+
+
+
+/* // services */
+
+#services {
+  margin-top: 30px;
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+
+    @media (max-width: 550px) {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    margin-top: 0;
+  }
+}
+
+// demo
+
+#demo {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  
+  iframe {
+    max-width: 560px;
+    width: 100%;
+  }
+}
+
+// portfolio
+
+#portfolio {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  
+  @media (max-width: 800px) {
+    flex-direction: column;
+    
+    
+  }
+}
+
+
+
+#intro {
+  text-align: center;
+}
+
+#form {
+  text-align: left;
+}
+
+#footer-text {
+  text-align: center;
+  font-size: .8em;
+}
+
+ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: right;
+    
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+}
