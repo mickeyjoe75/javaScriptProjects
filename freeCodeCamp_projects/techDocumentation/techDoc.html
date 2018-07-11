@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" href="techDoc.css">
+</head>
+<main id="main-doc">
+  <section class="main-section" id="What's_New_in_Tableau">
+    <header>What's New in Tableau</header>
+    <article>  
+      <p>Tableau Licensing
+New user-based term licenses are now available
+Tableau now offers different types of user-based term licenses that grant a range of web authoring and other capabilities at various price points. This gives organizations more flexibility to fit licenses to the data analysis and visualization needs of different users. To learn more, see User-based licenses, or to see the capabilities of each license, see Tableau Pricing.</p>
+
+<p>Install and Deploy Tableau
+Register Tableau Desktop from the command line
+When you install Tableau Desktop from the command line (for Windows) you can now register the product as part of the install without having to complete the registration for new users through the user interface or as a separate command line operation.</p>
+
+<p>Add a single command line that includes the REGISTER=“1” installer option. During the installation process, the installer will run the -register process and add the registration information. This process uses the registration information from the following location in the registry: HKEY_CURRENT_USER\Software\Tableau\Registration\Data.</p>
+
+<p>For information about adding registration information to the registry and the property settings for the -register property, see the "Register Tableau Desktop" and the "Installer properties" sections in Deploy Tableau Desktop.</p>
+
+<p>Connect to spatial columns in Microsoft SQL Server
+You can now use spatial columns when you connect to Microsoft SQL Server in Tableau. You can also use Custom SQL and RAWSQL to perform advanced spatial analysis in Tableau. For more information, see Connect to Spatial Data in Microsoft SQL Server.</p>
+
+<p>Design Views and Analyze Data
+Apply step lines and jump lines
+Change the Line mark type to a step line or a jump line by clicking the Path property in the Marks card.</p>
+
+<p>Step lines and jump lines can help you see and compare incremental patterns of change over time. Use these line types for numeric data that remains constant for periods of time, with noticeable changes or deltas – such as account balances, inventory levels, or interest rates. For details, see Path properties.</p>
+
+<li>Tips for analytics objects
+In the Analytics pane, available analytics objects vary based on the current state of the data in a visualization. For example, you can't apply trend lines to the view when it contains stacked marks. Tooltips in the Analytics pane explain why an Analytics object isn't available, or provide a tip on what is required to use that object in the view.</li>
+<li>Filter hierarchical data
+When the data in your view contains hierarchies, filters for those fields can use the All Values in Hierarchy option. Your filtering experience now matches the parent/child relationships in the hierarchy.</li>
+      </artice>
+    </section>
+  <section class="main-section" id="Get_Started">
+    <header>Get Started</header>
+    <article>
+      <p>This section gives you the basics on getting started with Tableau.</p>
+
+      
+      <li>For a walkthrough of how to get started, see Build a Basic View to Explore Your Data.</li>
+
+<li>For an in-depth tutorial on how to use Tableau, see Get Started with Tableau Desktop.</li>
+
+      <li>For examples of how you can build basic types of charts and views, see Build Common Chart Types in Data Views.</li>
+      <li>If you are using Tableau Online and Tableau Server to explore data and edit views, see Use Tableau on the Web.</li>
+<li>For information on how to build and use maps, see Geographic Data Analysis in Tableau.</li>
+      </artice>
+    </section>
+  <section class="main-section" id="Connect_to_and_Prepare_Data">
+    <header>Connect to and Prepare Data</header>
+    <article>
+    <p>Before you begin your analysis, you must connect to your data and then set up the data source. There are many optional configurations that you can make on the Data Source page that Tableau uses to interpret and interact with your data.</p>
+
+<p>The topics in this section describe how to connect to your data and use these configurations in order to optimize your data source for analysis.</p>
+
+   </article>
+    </section>
+  <section class="main-section" id="Build_Charts_and_Analyze_Data">
+    <header>Build Charts and Analyze Data</header>
+    <article> 
+Tableau Desktop is a kind of laboratory in which you can discover the meaning that lies hidden in your data:
+<code>DATEADD ('month', 3, #2004-04-15#) = 2004-0715 12:00:00 AM
+</code>
+
+Select the code in the pad and hit explore it on Tableau Desktop or Public!
+    </article>
+    </section>
+  <section class="main-section" id="Tableau_-_Functions">
+    <header>Tableau - Functions</header>
+    <p>
+Any data analysis involves a lot of calculations. In Tableau, the calculation editor is used to apply calculations to the fields being analyzed. Tableau has a number of inbuilt functions which help in creating expressions for complex calculations.
+    </p>
+       
+    </section>
+  <section class="main-section" id="Number_Functions">
+    <header>Number Functions</header>
+    <article>
+These are the functions used for numeric calculations. They only take numbers as inputs. Following are some examples of important number functions:
+      <p>Rounds a number to the nearest integer of equal or greater value.<code>CEILING(2.145) = 3</code> This syntax can be used to declare both local and global variables.
+      </p>
+      <p>
+        Raises the number to the specified power. <code>POWER(5,3) = 125</code> This always creates the nth power of a variable. </p>
+      <p>
+        Rounds the numbers to a specified number of digits.	 For example,<code> ROUND(3.14152,2) = 3.14</code> This syntax can be used to declare a block scope local variable. See String Functions below.
+      </p>
+    </article>
+    </section>
+  <section class="main-section" id="String_Functions">
+    <header>String Functions</header>
+    <article>
+     <p> String Functions are used for string manipulation. Following are some important string functions with examples.</p>
+
+<p>Returns the length of the string.</p>
+<code>LEN("Tableau") = 7
+</code>
+      <p>Returns the string with any leading spaces removed.</p>
+
+<code>LTRIM(" Tableau ") = "Tableau"
+</code>
+    </article>
+    </section>
+  
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <li>All the documentation in this page is taken from <a href="https://onlinehelp.tableau.com/current/pro/desktop/en-us/help.html#reference_overview.html%3FTocPath%3DReference%7C_____0" target="_blank">Tableau Help</a>
+    </article>
+    </section>
+</main>
+<nav id="navbar">
+  <header>Tableau Documentation</header>
+  <ul> 
+    <a class="nav-link" href="#What's_New_in_Tableau" rel="internal"><li>What's New in Tableau</li></a>
+    <a class="nav-link" href="#Get_Started" rel="internal"><li>Get Started</li></a>
+    <a class="nav-link" href="#Connect_to_and_Prepare_Data" rel="internal"><li>Connect to and Prepare Data</li></a>
+    <a class="nav-link" href="#Build_Charts_and_Analyze_Data" rel="internal"><li>Build Charts and Analyze Data</li></a>
+    <a class="nav-link" href="#Tableau_-_Functions" rel="internal"><li>Tableau - Functions</li></a>
+    <a class="nav-link" href="#Number_Functions" rel="internal"><li>Number Functions</li></a>
+    <a class="nav-link" href="#String_Functions" rel="internal"><li>String Functions</li></a>
+    <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+  </ul>
+</nav>
+</html>
